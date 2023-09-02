@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-
 import 'HomeScreen.dart';
 
 class SplashScreen extends StatefulWidget {
@@ -17,7 +16,7 @@ class _SplashScreenState extends State<SplashScreen> {
       child: Scaffold(
         backgroundColor: const Color(0xfffdbd10),
         appBar: AppBar(
-          leading: Icon(Icons.fastfood,color: Colors.black,size: 28,),
+          leading: const Icon(Icons.lunch_dining,color: Colors.black,size: 40,),
           backgroundColor: const Color(0xfffdbd10),
           title: const Row(
             children: [
@@ -44,7 +43,7 @@ class _SplashScreenState extends State<SplashScreen> {
             InkWell(hoverColor: Colors.white,
               onTap: () {
                 Navigator.of(context).push(
-                  MaterialPageRoute(builder: (context) => HomeScreen(),),);
+                  MaterialPageRoute(builder: (context) => const HomeScreen(),),);
               },
               child: Container(
                 height: 55,
@@ -74,22 +73,22 @@ class _SplashScreenState extends State<SplashScreen> {
           mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            SizedBox(height: 100,),
+            const SizedBox(height: 60,),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
-              Text('Good',style: GoogleFonts.nunito(fontSize: 70,letterSpacing: 5),),
-              Text('Food',style: GoogleFonts.nunito(fontSize: 70,letterSpacing: 5,color: Colors.white),),
+              Text('Good',style: GoogleFonts.robotoSlab(fontSize: 50,letterSpacing: 5),),
+              Text('Food',style: GoogleFonts.robotoSlab(fontSize: 50,letterSpacing: 5,color: Colors.white),),
               ],
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
-              Text('Great',style: GoogleFonts.nunito(fontSize: 70,letterSpacing: 5,color: Colors.white),),
-              Text('Life !',style: GoogleFonts.nunito(fontSize: 70,letterSpacing: 5,color: Colors.black),),
+              Text('Great',style: GoogleFonts.robotoSlab(fontSize: 50,letterSpacing: 5,color: Colors.white),),
+              Text('Life !',style: GoogleFonts.robotoSlab(fontSize: 50,letterSpacing: 5,color: Colors.black),),
               ],
             ),
-            Spacer(),
+            const Spacer(),
             Stack(
               children: [
                 Container(
@@ -109,7 +108,7 @@ class _SplashScreenState extends State<SplashScreen> {
                 ),
               ],
             ),
-            Spacer(),
+            const Spacer(),
           ],
         ),
       ),
