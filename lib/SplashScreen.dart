@@ -28,10 +28,10 @@ class _SplashScreenState extends State<SplashScreen> {
               Text(
                 "ie",
                 style: TextStyle(
-                  color: Colors.white,
-                  fontWeight: FontWeight.w700,
-                  letterSpacing: 2,
-                  fontSize: 30
+                    color: Colors.white,
+                    fontWeight: FontWeight.w700,
+                    letterSpacing: 2,
+                    fontSize: 30
                 ),
               ),
             ],
@@ -42,7 +42,7 @@ class _SplashScreenState extends State<SplashScreen> {
           children: [
             InkWell(hoverColor: Colors.white,
               onTap: () {
-                Navigator.of(context).push(
+                Navigator.of(context).pushReplacement(
                   MaterialPageRoute(builder: (context) => const HomeScreen(),),);
               },
               child: Container(
@@ -77,15 +77,15 @@ class _SplashScreenState extends State<SplashScreen> {
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
-              Text('Good',style: GoogleFonts.robotoSlab(fontSize: 50,letterSpacing: 5),),
-              Text('Food',style: GoogleFonts.robotoSlab(fontSize: 50,letterSpacing: 5,color: Colors.white),),
+                Text('Good',style: GoogleFonts.robotoSlab(fontSize: 50,letterSpacing: 5),),
+                Text('Food',style: GoogleFonts.robotoSlab(fontSize: 50,letterSpacing: 5,color: Colors.white),),
               ],
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
-              Text('Great',style: GoogleFonts.robotoSlab(fontSize: 50,letterSpacing: 5,color: Colors.white),),
-              Text('Life !',style: GoogleFonts.robotoSlab(fontSize: 50,letterSpacing: 5,color: Colors.black),),
+                Text('Great',style: GoogleFonts.robotoSlab(fontSize: 50,letterSpacing: 5,color: Colors.white),),
+                Text('Life !',style: GoogleFonts.robotoSlab(fontSize: 50,letterSpacing: 5,color: Colors.black),),
               ],
             ),
             const Spacer(),
