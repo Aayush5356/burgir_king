@@ -424,14 +424,16 @@ class _HomeScreenState extends State<HomeScreen> {
                             height: 10,
                           ),
                           Container(
-                            height: 155,
-                            width: 270,
+                            height: 165,
+                            width: 280,
                             decoration: BoxDecoration(
                               color: const Color(0xffffce48),
                               borderRadius: BorderRadius.circular(20),
                             ),
-                            child: Image.asset('assets/images/Burger_img.png',
-                                fit: BoxFit.fitWidth),
+                            child: ClipRRect(borderRadius: BorderRadius.circular(10),
+                              child: Image.asset('assets/images/b7_img.png',
+                                  fit: BoxFit.fill),
+                            ),
                           ),
                           const Column(
                             children: [
