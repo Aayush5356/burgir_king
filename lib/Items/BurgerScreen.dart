@@ -1,4 +1,3 @@
-
 import 'package:burgir_king/CartScreen.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -13,7 +12,8 @@ class BurgerScreen extends StatefulWidget {
 class _BurgerScreenState extends State<BurgerScreen> {
   @override
   Widget build(BuildContext context) {
-    return SafeArea(
+    return
+      SafeArea(
       child: Scaffold(
         backgroundColor: Colors.white,
         appBar: AppBar(
