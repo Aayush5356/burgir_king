@@ -372,7 +372,7 @@ class _CartScreenState extends State<CartScreen> {
                             width: 110,
                           ),
                           Text(
-                            "250₹",
+                            "610₹",
                             style: GoogleFonts.poppins(fontSize: 16),
                           ),
                         ],
